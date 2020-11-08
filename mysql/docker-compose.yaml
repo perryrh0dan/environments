@@ -1,4 +1,4 @@
-version: '3.3'
+version: '3.7'
 services:
   mysql:
     container_name: mysql
@@ -16,4 +16,4 @@ services:
       - db-data:/var/lib/mysql
 volumes:
   db-data:
-    drive: local
+    driver: local

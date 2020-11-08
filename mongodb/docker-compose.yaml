@@ -8,6 +8,7 @@ services:
     volumes:
       - db-data:/data/db
       - db-config:/data/configdb
+
 volumes:
   db-data:
     driver: local

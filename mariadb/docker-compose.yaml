@@ -1,0 +1,12 @@
+version: '3'
+services:
+  mariadb:
+    image: dev.camelot-group.com:5000/dserv_db:mfue_dev
+    environment:
+    - MYSQL_ROOT_PASSWORD: "password"
+    ports:
+      - "1027:3306"
+
+volumes:
+  db-data:
+    driver: local
